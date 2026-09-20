@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./organism.css";
 import "./navigation.css";
+import "./refinement.css";
 
 export const metadata: Metadata = {
   title: "think.anas — Stay human. Think further.",
