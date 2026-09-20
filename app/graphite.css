@@ -1,0 +1,7 @@
+/* Neutral graphite keeps ivory and citron legible without a blue-black cast. */
+:root{--graphite:#383b3e;--graphite-raised:#44484b;--graphite-copy:#e0e2df}
+body,.site{background:var(--graphite)!important}.masthead,.masthead.compact{background:#383b3ef5;border-bottom-color:#ffffff1c}.hero{background:linear-gradient(120deg,#383b3e 0%,#3d4043 65%,#45494c 100%)}
+.masthead .navigation a{color:#e0e2df}.masthead .navigation a:hover{color:var(--lime)}.identity-caption{color:#c2c8c8}.hero-topline,.hero-bottom{border-color:#ffffff26}.hero-topline .micro,.hero-intro p,.hero-bottom{color:var(--graphite-copy)}
+.dark-section,footer{background:var(--graphite)}.perspective-panel{background:linear-gradient(135deg,#484d50,#3c4043);border-color:#737a7d}.perspective-panel p,.perspective-heading p,.footer-top p{color:var(--graphite-copy)}.research-spine{background:var(--graphite)}.footer-bottom{color:#c4c9c9}.perspective-tabs button{border-color:#747b7d}.perspective-tabs button:last-child{border-color:#747b7d}
+.sculpture-grid{opacity:.2}.living-sculpture:before{background:radial-gradient(ellipse,#92a2ee25,transparent 70%)}
+@media(max-width:760px){.masthead .navigation.expanded{background:var(--graphite)}}

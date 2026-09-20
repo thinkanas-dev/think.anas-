@@ -3,6 +3,7 @@ import "./globals.css";
 import "./organism.css";
 import "./navigation.css";
 import "./refinement.css";
+import "./graphite.css";
 
 export const metadata: Metadata = {
   title: "think.anas — Stay human. Think further.",
