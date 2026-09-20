@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./organism.css";
+import "./navigation.css";
 
 export const metadata: Metadata = {
   title: "think.anas — Stay human. Think further.",
   description: "Independent thinking at the intersection of AI and health. Ideas, open questions and human perspectives by Anas.",
   icons: {
-    icon: "/brand-symbol.png",
-    shortcut: "/brand-symbol.png",
+    icon: "/monogram.svg",
+    shortcut: "/monogram.svg",
   },
 };
 
