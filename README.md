@@ -114,11 +114,27 @@ Replace the filename with the pending migration and `DB` with your D1 binding na
 - `npm run dev`: start the Vite/Vinext development server
 - `npm run build`: build the deployable Sites artifact
 - `npm run start`: preview the built Worker locally with D1/R2 support
+- `npm run build:vercel`: build the Vercel serverless artifact in `.vercel/output/`
 - `npm run db:generate`: generate Drizzle migrations after schema changes
 
 When using the Sites plugin, follow its skill instructions for installation, builds, and publishing. These npm commands remain available for standalone use.
 
 The portable build runs Vinext directly without a host `timeout` command. The managed-linux build uses `scripts/build-verified.sh` and its existing `SITES_BUILD_TIMEOUT` setting.
+
+## Vercel
+
+Vercel is a separate deployment target from the Cloudflare Worker. The Vercel
+build adds Nitro only when `NITRO_PRESET=vercel` (set by `build:vercel`), then
+emits a Vercel Build Output API artifact into `.vercel/output/`.
+
+Use the **Other** framework preset, build command `npm run build:vercel`, and
+leave **Output Directory** empty. No application-specific environment variable
+is required by this site. Do not use `dist/client` as the Vercel output
+directory: it contains static assets only, while Vinext routes are handled by
+the generated `__server.func` function.
+
+Cloudflare continues to use `npm run build`, `dist/server/wrangler.json`, and
+the existing `wrangler.toml` configuration.
 
 ## Learn More
 
